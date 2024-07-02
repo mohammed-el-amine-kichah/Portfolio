@@ -385,7 +385,7 @@ img {
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 320px) {
   .home {
-    row-gap: 5rem;
+    row-gap: 7.5rem;
   }
   .home__img {
     width: 250px;
