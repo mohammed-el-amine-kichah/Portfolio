@@ -393,6 +393,16 @@ img {
     left: 50%;
   }
 }
+@media screen and (max-width: 320px) {
+  .home {
+    row-gap: 2rem;
+  }
+  .home__img {
+    width: 250px;
+    bottom: 10%;
+    left: 65%;
+  }
+}
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
