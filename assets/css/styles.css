@@ -388,7 +388,7 @@ img {
     row-gap: 2rem;
   }
   .show {
-    right: auto;
+    right: 20 rem;
   }
   .home__img {
     width: 250px;
