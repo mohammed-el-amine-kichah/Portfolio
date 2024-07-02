@@ -3,13 +3,15 @@ const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
 
-    if(toggle && nav){
+    
         toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show')
         })
     }
-}
-showMenu('nav-toggle','nav-menu')
+    
+
+showMenu('nav-toggle','nav-menu');
+
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -62,6 +64,7 @@ function sendEmail() {
 
     window.location.href = mailtoLink;
 }
+
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
