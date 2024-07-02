@@ -385,7 +385,10 @@ img {
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 320px) {
   .home {
-    row-gap: 25rem;
+    row-gap: 2rem;
+  }
+  .show {
+    right: auto;
   }
   .home__img {
     width: 250px;
