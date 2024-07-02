@@ -121,6 +121,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  padding: 0 1rem;
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -176,6 +177,7 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+  margin-left: auto;
 }
 
 /*Active menu*/
@@ -387,8 +389,12 @@ img {
   .home {
     row-gap: 2rem;
   }
-  .show {
-    right: 20 rem;
+  .nav {
+    padding: 0 0.25rem;
+  }
+
+  .nav__toggle {
+    margin-right: -0.25rem;
   }
   .home__img {
     width: 250px;
@@ -404,6 +410,13 @@ img {
     width: 250px;
     bottom: 10%;
     left: 35%;
+  }
+  .nav {
+    padding: 0 0.25rem;
+  }
+
+  .nav__toggle {
+    margin-right: -0.25rem;
   }
 }
 @media screen and (min-width: 576px) {
