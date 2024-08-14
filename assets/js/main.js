@@ -53,17 +53,7 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
-function sendEmail() {
-    var name = document.querySelector('[name="name"]').value;
-    var email = document.querySelector('[name="email"]').value;
-    var message = document.querySelector('[name="message"]').value;
 
-    var mailtoLink = "mailto:kichahdevil@gmail.com"
-                    + "?subject=" + encodeURIComponent("Contact Form Submission from " + name)
-                    + "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
-
-    window.location.href = mailtoLink;
-}
 
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
