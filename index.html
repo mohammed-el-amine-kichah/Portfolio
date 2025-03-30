@@ -67,7 +67,7 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
+              <a href="#work" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
                 <a href="blog.html" class="nav__link">Blog</a>
@@ -243,31 +243,48 @@
         </div>
       </section>
 
-      <!--===== WORK =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
 
-        <div class="work__container bd-grid">
-          <a href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work2.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
-          </a>
-        </div>
-      </section>
+     
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div class="modal-body">
+      <h2 id="projectTitle">Project Title</h2>
+      <img id="projectImage" src="" alt="Project Image">
+      <div id="projectDescription"></div>
+      <div class="project-links">
+        <!-- <a id="liveLink" href="#" target="_blank">View Live</a> -->
+        <a id="githubLink" href="#" target="_blank">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Update your projects section with data attributes -->
+<section class="work section" id="work">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="work__container bd-grid">
+    <a href="#" class="work__img" data-project="0">
+      <img src="assets/img/expense.png" alt="Expense tracker" />
+    </a>
+    <a href="#" class="work__img" data-project="1">
+      <img src="assets/img/foodhub.png" alt="Foodhub mobile app" />
+    </a>
+    <a href="#" class="work__img" data-project="2">
+      <img src="assets/img/password.png" alt="Password shield extension" />
+    </a>
+    <a href="#" class="work__img" data-project="3">
+      <img src="assets/img/work4.jpg" alt="Project 4" />
+    </a>
+    <a href="#" class="work__img" data-project="4">
+      <img src="assets/img/navigi.png" alt="Navigi a platform to get jobs" />
+    </a>
+    <a href="#" class="work__img" data-project="5">
+      <img src="assets/img/bac.jpg" alt="Bac companion" />
+    </a>
+  </div>
+</section>
 
 
     <!--===== FOOTER =====-->

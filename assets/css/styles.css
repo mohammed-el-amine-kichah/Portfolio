@@ -327,14 +327,25 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9; /* Ensures consistent aspect ratio */
+  background-color: #f0f0f0; /* Fallback background color */
 }
 .work__img img {
-  transition: 1s;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
+  transition: transform 1s;
 }
 .work__img img:hover {
   transform: scale(1.1);
@@ -535,3 +546,91 @@ img {
   }
 }
 
+
+
+
+/* ===== ADDITIONAL MEDIA QUERIES ===== */
+/* modals for the projects */
+
+
+/* Modal Styles - Add to your CSS file */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.modal-content {
+  background-color: var(--white-color, #fff);
+  margin: 5% auto;
+  padding: 25px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.show {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+#projectImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+#projectDescription {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.project-links a {
+  padding: 10px 20px;
+  background-color: var(--first-color, #4070F4);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-links a:hover {
+  background-color: var(--second-color, #3058da);
+}
